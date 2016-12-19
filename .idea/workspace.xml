@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c72f1f2-7ee9-40fb-a52c-1dd0ff141fa9" name="Default" comment="" />
+    <list default="true" id="9c72f1f2-7ee9-40fb-a52c-1dd0ff141fa9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/src/com/edu/AdminPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/src/com/edu/LoginPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/src/com/edu/StartMaster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/src/com/edu/UserPage.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/src/com/edu/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/src/com/edu/demo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Server/com/edu/server/TransactionObject.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java" afterPath="$PROJECT_DIR$/Server/src/com/edu/TransactionObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Server/com/edu/server/ObjectHandler.class" afterPath="$PROJECT_DIR$/out/production/Server/com/edu/server/ObjectHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ATMachine.iml" afterPath="$PROJECT_DIR$/ATMachine.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/com/edu/ContactServer.java" afterPath="$PROJECT_DIR$/Client/src/com/edu/ContactServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java" afterPath="$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Server.iml" afterPath="$PROJECT_DIR$/Server/Server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java" afterPath="$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java" afterPath="$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,9 +41,12 @@
       <file leaf-file-name="TransactionObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,18 +54,18 @@
       <file leaf-file-name="ContactServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/com/edu/ContactServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/src/com/edu/demo.java">
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/com/edu/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+            <state relative-caret-position="-15">
+              <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,110 +73,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/com/edu/User.java">
+      <file leaf-file-name="AdminPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/com/edu/AdminPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#384#385#0" expanded="false" />
-                <element signature="e#406#407#0" expanded="false" />
-                <element signature="e#453#454#0" expanded="false" />
-                <element signature="e#484#485#0" expanded="false" />
-                <element signature="e#516#517#0" expanded="false" />
-                <element signature="e#538#539#0" expanded="false" />
-                <element signature="e#583#584#0" expanded="false" />
-                <element signature="e#614#615#0" expanded="false" />
-                <element signature="e#648#649#0" expanded="false" />
-                <element signature="e#672#673#0" expanded="false" />
-                <element signature="e#701#702#0" expanded="false" />
-                <element signature="e#763#764#0" expanded="false" />
-                <element signature="e#814#815#0" expanded="false" />
-                <element signature="e#849#850#0" expanded="false" />
-                <element signature="e#881#882#0" expanded="false" />
-                <element signature="e#903#904#0" expanded="false" />
-                <element signature="e#948#949#0" expanded="false" />
-                <element signature="e#979#980#0" expanded="false" />
-                <element signature="e#1008#1009#0" expanded="false" />
-                <element signature="e#1066#1067#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="e#323#324#0" expanded="false" />
-                <element signature="e#355#356#0" expanded="false" />
-                <element signature="e#384#385#0" expanded="false" />
-                <element signature="e#411#412#0" expanded="false" />
-                <element signature="e#447#448#0" expanded="false" />
-                <element signature="e#475#476#0" expanded="false" />
-                <element signature="e#502#503#0" expanded="false" />
-                <element signature="e#527#528#0" expanded="false" />
-                <element signature="e#563#564#0" expanded="false" />
-                <element signature="e#593#594#0" expanded="false" />
-                <element signature="e#621#622#0" expanded="false" />
-                <element signature="e#647#648#0" expanded="false" />
-                <element signature="e#685#686#0" expanded="false" />
-                <element signature="e#717#718#0" expanded="false" />
-                <element signature="e#746#747#0" expanded="false" />
-                <element signature="e#773#774#0" expanded="false" />
-                <element signature="e#817#818#0" expanded="false" />
-                <element signature="e#855#856#0" expanded="false" />
-                <element signature="e#887#888#0" expanded="false" />
-                <element signature="e#917#918#0" expanded="false" />
-                <element signature="e#953#954#0" expanded="false" />
-                <element signature="e#985#986#0" expanded="false" />
-                <element signature="e#1012#1013#0" expanded="false" />
-                <element signature="e#1039#1040#0" expanded="false" />
-                <element signature="e#1080#1081#0" expanded="false" />
-                <element signature="e#1116#1117#0" expanded="false" />
-                <element signature="e#1146#1147#0" expanded="false" />
-                <element signature="e#1175#1176#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="678">
+              <caret line="572" column="94" lean-forward="true" selection-start-line="572" selection-start-column="94" selection-end-line="572" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2313#2321#0" expanded="true" />
+                <element signature="e#2440#2448#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObjectHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/com/edu/UserPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2269#2277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartMaster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/com/edu/StartMaster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-114">
+              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="141" column="32" lean-forward="true" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <marker date="1480481459000" expanded="true" signature="4193:4251" ph="SELECT USERN... ATM_TRANSACTION" />
-                <marker date="1480481459000" expanded="true" signature="4316:4375" ph="SELECT USERN... ATM_TRANSACTION" />
+                <marker date="1482111062000" expanded="true" signature="2826:2973" ph="UPDATE ATM_M... " />
+                <marker date="1482111062000" expanded="true" signature="4919:4961" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+                <marker date="1482111062000" expanded="true" signature="4919:5102" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+                <marker date="1482111062000" expanded="true" signature="5919:5986" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+                <marker date="1482111062000" expanded="true" signature="6059:6182" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+                <marker date="1482111062000" expanded="true" signature="6059:6191" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+                <marker date="1482111062000" expanded="true" signature="8355:8416" ph="SELECT USER_... ATM_MACHINE_TABLE" />
+                <marker date="1482111062000" expanded="true" signature="8481:8543" ph="SELECT USER_... ATM_MACHINE_TABLE" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ATMachine.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ATMachine.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -168,6 +143,38 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>PASSWORD</find>
+      <find>ATM_TRANSACTION</find>
+      <find>yOffSet</find>
+      <find>blogin</find>
+      <find>pass</find>
+      <find>loginpanel</find>
+      <find>txuser</find>
+      <find>AdminPage</find>
+      <find>userPanel</find>
+      <find>Total</find>
+      <find>adminpanel</find>
+      <find>t.</find>
+      <find>pin</find>
+      <find>Received:=</find>
+      <find>saving and cu</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>current</replace>
+      <replace>user_name</replace>
+      <replace>lengthY</replace>
+      <replace>userPasswordTextField</replace>
+      <replace>userNameTextField</replace>
+      <replace>adminpanel</replace>
+      <replace>userpanel</replace>
+      <replace>userPanel</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -177,14 +184,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Client/src/TransactionObject.java" />
-        <option value="$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java" />
-        <option value="$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java" />
-        <option value="$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java" />
         <option value="$PROJECT_DIR$/out/production/Server/com/edu/server/TransactionObject.class" />
-        <option value="$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java" />
         <option value="$PROJECT_DIR$/Client/src/com/edu/User.java" />
         <option value="$PROJECT_DIR$/Client/src/com/edu/demo.java" />
+        <option value="$PROJECT_DIR$/Server/src/shared/TransactionObject.java" />
+        <option value="$PROJECT_DIR$/Server/src/TransactionObject.java" />
+        <option value="$PROJECT_DIR$/Server/src/com/edu/TransactionObject.java" />
+        <option value="$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java" />
         <option value="$PROJECT_DIR$/Client/src/com/edu/ContactServer.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/Optionspage.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/OptionsPanelController.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/OptionsPage.java" />
+        <option value="$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/Testing.form" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/loginPage.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/adminPage.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/StartMaster.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/LoginPage.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/UserPage.java" />
+        <option value="$PROJECT_DIR$/Client/src/com/edu/AdminPage.java" />
+        <option value="$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java" />
       </list>
     </option>
   </component>
@@ -195,9 +215,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="21" />
     <option name="width" value="1680" />
-    <option name="height" value="1008" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,9 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,6 +242,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,6 +363,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,25 +380,26 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/Server/src/com/edu" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.edu" />
-      <recent name="com.edu.server" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.edu.server" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.edu.server" />
+      <recent name="com.edu" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Application.StartServer">
     <configuration default="false" name="StartServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.edu.server.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -313,6 +413,66 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Server" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.edu.demo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Client" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContactServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.edu.ContactServer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Client" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="StartMaster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.edu.StartMaster" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Client" />
       <envs />
       <method />
     </configuration>
@@ -787,7 +947,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -930,13 +1090,19 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.5.6" />
       <item index="1" class="java.lang.String" itemvalue="Application.StartServer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.demo" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ContactServer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.StartMaster" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.StartServer" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.StartMaster" />
+        <item index="1" class="java.lang.String" itemvalue="Application.StartServer" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ContactServer" />
+        <item index="3" class="java.lang.String" itemvalue="Application.demo" />
       </list>
     </recent_temporary>
   </component>
@@ -953,48 +1119,53 @@
       <workItem from="1480467542140" duration="6112000" />
       <workItem from="1480534376496" duration="3000" />
       <workItem from="1480737391900" duration="1536000" />
-      <workItem from="1480739845406" duration="968000" />
+      <workItem from="1480739845406" duration="2319000" />
+      <workItem from="1480812721017" duration="2738000" />
+      <workItem from="1481324198300" duration="29043000" />
+      <workItem from="1481478412909" duration="748000" />
+      <workItem from="1481506189047" duration="1519000" />
+      <workItem from="1482013332196" duration="55549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8619000" />
+    <option name="totallyTimeSpent" value="99567000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="21" width="1680" height="1008" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2777778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22039072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2662474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32704404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23260073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1004,7 +1175,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/com/edu/ContactServer.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1012,127 +1199,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/ContactServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="e#763#764#0" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1066#1067#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#323#324#0" expanded="false" />
-            <element signature="e#355#356#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#502#503#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#773#774#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#887#888#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="e#985#986#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1116#1117#0" expanded="false" />
-            <element signature="e#1146#1147#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <marker date="1480481459000" expanded="true" signature="4193:4251" ph="SELECT USERN... ATM_TRANSACTION" />
-            <marker date="1480481459000" expanded="true" signature="4316:4375" ph="SELECT USERN... ATM_TRANSACTION" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ATMachine.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,9 +1226,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,74 +1234,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="e#763#764#0" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1066#1067#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#323#324#0" expanded="false" />
-            <element signature="e#355#356#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#502#503#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#773#774#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#887#888#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="e#985#986#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1116#1117#0" expanded="false" />
-            <element signature="e#1146#1147#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/TransactionObject.java" />
     <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1244,10 +1255,14 @@
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <marker date="1480481459000" expanded="true" signature="4193:4251" ph="SELECT USERN... ATM_TRANSACTION" />
-            <marker date="1480481459000" expanded="true" signature="4316:4375" ph="SELECT USERN... ATM_TRANSACTION" />
+            <marker date="1482111062000" expanded="true" signature="2826:2973" ph="UPDATE ATM_M... " />
+            <marker date="1482111062000" expanded="true" signature="4919:4961" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="4919:5102" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="5919:5986" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6182" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6191" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8355:8416" ph="SELECT USER_... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8481:8543" ph="SELECT USER_... ATM_MACHINE_TABLE" />
           </folding>
         </state>
       </provider>
@@ -1256,7 +1271,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/ContactServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/TransactionObject.java" />
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1482111062000" expanded="true" signature="2826:2973" ph="UPDATE ATM_M... " />
+            <marker date="1482111062000" expanded="true" signature="4919:4961" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="4919:5102" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="5919:5986" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6182" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6191" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8355:8416" ph="SELECT USER_... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8481:8543" ph="SELECT USER_... ATM_MACHINE_TABLE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATMachine.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1280,9 +1362,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,74 +1370,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="e#763#764#0" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1066#1067#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#323#324#0" expanded="false" />
-            <element signature="e#355#356#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#502#503#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#773#774#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#887#888#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="e#985#986#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1116#1117#0" expanded="false" />
-            <element signature="e#1146#1147#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/TransactionObject.java" />
     <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1368,10 +1391,14 @@
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <marker date="1480481459000" expanded="true" signature="4193:4251" ph="SELECT USERN... ATM_TRANSACTION" />
-            <marker date="1480481459000" expanded="true" signature="4316:4375" ph="SELECT USERN... ATM_TRANSACTION" />
+            <marker date="1482111062000" expanded="true" signature="2826:2973" ph="UPDATE ATM_M... " />
+            <marker date="1482111062000" expanded="true" signature="4919:4961" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="4919:5102" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="5919:5986" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6182" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6191" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8355:8416" ph="SELECT USER_... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8481:8543" ph="SELECT USER_... ATM_MACHINE_TABLE" />
           </folding>
         </state>
       </provider>
@@ -1380,18 +1407,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/AtmServerStart.java" />
-    <entry file="file://$PROJECT_DIR$/Client/Client.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/META-INF/application.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1406,6 +1425,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Server/com/edu/server/StartServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Server/com/edu/server/TransactionObject.class" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/LoginPage.form" />
+    <entry file="file://$PROJECT_DIR$/Client/Client.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ATMachine.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1414,132 +1458,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/OptionsPanelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/TransactionObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <marker date="1480481459000" expanded="true" signature="4193:4251" ph="SELECT USERN... ATM_TRANSACTION" />
-            <marker date="1480481459000" expanded="true" signature="4316:4375" ph="SELECT USERN... ATM_TRANSACTION" />
+            <element signature="e#438#439#0" expanded="false" />
+            <element signature="e#466#467#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Server/com/edu/server/StartServer.class">
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/Testing.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/Testing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Server/com/edu/server/TransactionObject.class">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/TransactionObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#323#324#0" expanded="false" />
-            <element signature="e#355#356#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#502#503#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#773#774#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#887#888#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="e#985#986#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1116#1117#0" expanded="false" />
-            <element signature="e#1146#1147#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="218">
+          <caret line="1483" column="16" lean-forward="false" selection-start-line="1483" selection-start-column="16" selection-end-line="1483" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/StartServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/com/edu/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="e#763#764#0" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1066#1067#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="510">
+          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/ContactServer.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/OptionsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="570">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="39" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/com/edu/demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state relative-caret-position="105">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/TransactionObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="e#737#738#0" expanded="false" />
+            <element signature="e#764#765#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/UserPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2269#2277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/TransactionObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/ContactServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/StartMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/com/edu/AdminPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="572" column="94" lean-forward="true" selection-start-line="572" selection-start-column="94" selection-end-line="572" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2313#2321#0" expanded="true" />
+            <element signature="e#2440#2448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/com/edu/server/ObjectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="141" column="32" lean-forward="true" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1482111062000" expanded="true" signature="2826:2973" ph="UPDATE ATM_M... " />
+            <marker date="1482111062000" expanded="true" signature="4919:4961" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="4919:5102" ph="INSERT INTO ATM_MACHINE_TABLE... " />
+            <marker date="1482111062000" expanded="true" signature="5919:5986" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6182" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="6059:6191" ph="SELECT * fro... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8355:8416" ph="SELECT USER_... ATM_MACHINE_TABLE" />
+            <marker date="1482111062000" expanded="true" signature="8481:8543" ph="SELECT USER_... ATM_MACHINE_TABLE" />
           </folding>
         </state>
       </provider>
@@ -1575,7 +1656,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>ojdbc7</last-edited>
+          <last-edited>ojdbc71</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1599,7 +1680,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>AT[M]achine</last-edited>
+          <last-edited>ATMachine</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

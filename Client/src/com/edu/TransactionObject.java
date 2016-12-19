@@ -20,7 +20,7 @@ public class TransactionObject implements Serializable{
     public String getType(){
         return type;
     }
-    public void setId(String type){
+    public void setId(String id){
         this.id = id;
     }
     public String getId(){

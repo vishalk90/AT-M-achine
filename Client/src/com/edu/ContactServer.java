@@ -10,8 +10,8 @@ import java.net.SocketAddress;
  * Created by vishalkulkarni on 11/30/16.
  */
 public class ContactServer {
-    //String hostName = "afsaccess2.njit.edu";
-    static String hostName = "localhost:8080";
+    //static String hostName = "afsaccess4.njit.edu";
+    static String hostName = "localhost";
     static int portNumber = 28195;
     private static Socket echoSocket = null;
     private static ObjectOutputStream outputStream = null;
@@ -31,7 +31,7 @@ public class ContactServer {
             outputStream.writeObject(transactionObject);
 
             if ((response = (TransactionObject) inputStream.readObject()) != null) {
-                System.out.println("Received:=" + response.getMessage());
+                //System.out.println("Received:=" + response.getMessage());
             }
 
         } catch (Exception e) {
@@ -39,4 +39,18 @@ public class ContactServer {
         }
         return response;
     }
+
+/*    public static void main(String args[]){
+        ContactServer con = new ContactServer();
+
+        TransactionObject a = new TransactionObject();
+        a.setId("CREATE");
+        a.setType("Active");
+        a.setName("ramesh");
+        a.setNum("ramesh");
+        a.setMessage("alive");
+
+        con.sendTransaction(a);
+
+    }*/
 }

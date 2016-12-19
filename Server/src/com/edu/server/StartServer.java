@@ -11,7 +11,7 @@ public class StartServer {
     public static void main(String [] args){
         try {
             ServerSocket myServerSocket = new ServerSocket(28195);
-            while(1==1) {
+            while(true) {
                 Socket incoming = myServerSocket.accept();
                 new ObjectHandler(incoming).start();
             }
