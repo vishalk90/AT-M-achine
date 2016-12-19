@@ -36,11 +36,14 @@ public class ObjectHandler extends Thread {
                     case "BALANCE":
                         response = fetchAccount(request, true);
                         break;
+                    case "FETCH_USERS":
+                        response = fetchUsers();
+                        break;
                     case "CREATE":
                         response = createAccount(request);
                         break;
                     case "DELETE":
-                        deleteAccount(request);
+                        response = deleteAccount(request);
                         break;
                     case "DEPOSIT":
                         updateBalanceAccount(request);
@@ -98,19 +101,23 @@ public class ObjectHandler extends Thread {
 
 
 
-    private static void deleteAccount(TransactionObject request) {
+    private static TransactionObject deleteAccount(TransactionObject request) {
         try {
             Connection conn = createConnection();
             Statement stmt = conn.createStatement();
             String user_name = request.getName();
-            stmt.executeUpdate("DELETE ATM_MACHINE_TABLE WHERE USER_NAME='" + user_name + "'");
-            System.out.println("DELETED DATA");
+            int numberOfRowsUpdated = 0;
+
+            numberOfRowsUpdated = stmt.executeUpdate("DELETE ATM_MACHINE_TABLE WHERE USER_NAME='" + user_name + "'");
+            System.out.println("DELETED DATA - "+numberOfRowsUpdated);
+            request.setId(Integer.toString(numberOfRowsUpdated));
             stmt.close();
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            return request;
         }
-
+        return request;
     }
 
 
@@ -140,6 +147,7 @@ public class ObjectHandler extends Thread {
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            request.setMessage(e.toString());
             return request;
         }
         return request;
@@ -210,19 +218,17 @@ public class ObjectHandler extends Thread {
         return connection;
     }
 
-    private static TransactionObject fetchUsers(boolean liveUser) {
+    private static TransactionObject fetchUsers() {
         TransactionObject transactionObject = new TransactionObject();
         try {
             Connection conn = createConnection();
             Statement stmt = conn.createStatement();
             ResultSet rs = null;
             transactionObject.setMessage("");
+            System.out.println("I am here in server inside fetchusers!");
 
-            if (liveUser) {
-                rs = stmt.executeQuery("SELECT USER_NAME from ATM_MACHINE_TABLE WHERE STATUS='ACTIVE'");
-            } else {
-                rs = stmt.executeQuery("SELECT USER_NAME from ATM_MACHINE_TABLE WHERE STATUS!='ACTIVE'");
-            }
+            rs = stmt.executeQuery("SELECT USER_NAME from ATM_MACHINE_TABLE");
+
 
             while (rs.next()) {
                 String username = rs.getString("USER_NAME");

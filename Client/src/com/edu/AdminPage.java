@@ -3,6 +3,9 @@ package com.edu;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by vishalkulkarni on 12/17/16.
@@ -22,6 +25,8 @@ public class AdminPage extends JPanel {
     JButton deleteUserButton;
 
     JPanel adminpanel;
+
+    //boolean waitFlag = false;
 
     JLabel message;
     JTextField checkingBalanceTx;
@@ -77,6 +82,8 @@ public class AdminPage extends JPanel {
         String[] userTypes = {"ADMIN", "USER"};
         JComboBox<String> userTypeComboBox = new JComboBox<String>(userTypes);
 
+        JComboBox<String> userListComboBox = new JComboBox<String>();
+
 
         setLayout(null);
         JLabel heading = new JLabel("<html>" + "NJIT - ATM Machine -" + "<font color='red'>" + " [Admin]" + "</font></html>");
@@ -93,6 +100,7 @@ public class AdminPage extends JPanel {
         JLabel UserNameLabel = new JLabel("User Name");
         JLabel UserPasswordLabel = new JLabel("User Password");
         JLabel UserTypeLabel = new JLabel("User Type");
+        JLabel selectUser = new JLabel("Select User");
 
         amountToTransferTx = new JTextField();
         amountToDepositTx = new JTextField();
@@ -121,7 +129,10 @@ public class AdminPage extends JPanel {
         UserNameLabel.setVisible(false);
 
         userTypeComboBox.setVisible(false);
+        userListComboBox.setVisible(false);
+        selectUser.setVisible(false);
         UserTypeLabel.setVisible(false);
+        deleteUserButton.setVisible(false);
 
         checkingBalanceTx.setHorizontalAlignment(JTextField.RIGHT);
         savingBalanceTx.setHorizontalAlignment(JTextField.RIGHT);
@@ -135,11 +146,14 @@ public class AdminPage extends JPanel {
         transferToLabel.setBounds(lengthX - 120, lengthY + 125 + 10, 150, 20);
         transferToTx.setBounds(lengthX, lengthY + 125 + 10, 150, 20);
         passwordTx.setBounds(lengthX, lengthY + 125 + 10, 150, 20);
-        UserPasswordLabel.setBounds(lengthX- 120, lengthY + 125 + 10, 150, 20);
+        UserPasswordLabel.setBounds(lengthX - 120, lengthY + 125 + 10, 150, 20);
         userTypeComboBox.setBounds(lengthX, lengthY + 150 + 10, 150, 25);
-        UserTypeLabel.setBounds(lengthX-120, lengthY + 150 + 10, 150, 25);
+        userListComboBox.setBounds(lengthX, lengthY + 100, 150, 25);
+        selectUser.setBounds(lengthX - 120, lengthY + 100, 150, 25);
+        deleteUserButton.setBounds(lengthX, lengthY + 130, 150, 20);
+        UserTypeLabel.setBounds(lengthX - 120, lengthY + 150 + 10, 150, 25);
         userNameTx.setBounds(lengthX, lengthY + 100 + 10, 150, 20);
-        UserNameLabel.setBounds(lengthX-120, lengthY + 100 + 10, 150, 20);
+        UserNameLabel.setBounds(lengthX - 120, lengthY + 100 + 10, 150, 20);
 
         amountToTransferTx.setBounds(lengthX, lengthY + 165, 150, 20);
         amountToDepositTx.setBounds(lengthX, lengthY + 115, 150, 20);
@@ -152,7 +166,7 @@ public class AdminPage extends JPanel {
         depositAmountButton.setBounds(lengthX, lengthY + 140, 150, 20);
         withdrawAmountButton.setBounds(lengthX, lengthY + 140, 150, 20);
         addNewUserButton.setBounds(lengthX, lengthY + 190, 150, 20);
-        deleteUserButton.setBounds(lengthX, lengthY + 190, 150, 20);
+        //deleteUserButton.setBounds(lengthX, lengthY + 190, 150, 20);
 
         amountToTransferTx.setVisible(false);
         amountToDepositTx.setVisible(false);
@@ -210,6 +224,9 @@ public class AdminPage extends JPanel {
         adminpanel.add(transferToTx);
         adminpanel.add(passwordTx);
         adminpanel.add(userTypeComboBox);
+        adminpanel.add(userListComboBox);
+        adminpanel.add(selectUser);
+        adminpanel.add(deleteUserButton);
         adminpanel.add(userNameTx);
         adminpanel.add(UserNameLabel);
         adminpanel.add(UserPasswordLabel);
@@ -261,8 +278,8 @@ public class AdminPage extends JPanel {
         depositPanelButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                savingBalanceTx.setText("$"+saving);
-                checkingBalanceTx.setText("$"+checking);
+                savingBalanceTx.setText("$" + saving);
+                checkingBalanceTx.setText("$" + checking);
 
                 transferFromComboBox.setVisible(false);
                 transferFromLabel.setVisible(false);
@@ -292,39 +309,54 @@ public class AdminPage extends JPanel {
                 checkingBalanceLabel.setVisible(true);
                 savingBalanceTx.setEditable(false);
                 checkingBalanceTx.setEditable(false);
+
+                userListComboBox.setVisible(false);
+                deleteUserButton.setVisible(false);
+                selectUser.setVisible(false);
+                message.setVisible(false);
+                amountToDepositTx.setText("0");
             }
 
         });
         depositAmountButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                message.setText(null);
-                message.setVisible(false);
 
-                float s = Float.parseFloat(savingBalanceTx.getText().substring(1, savingBalanceTx.getText().length()));
-                float c = Float.parseFloat(checkingBalanceTx.getText().substring(1, checkingBalanceTx.getText().length()));
-                float amount = Float.parseFloat(amountToDepositTx.getText());
-                //System.out.println("s c a "+ s +" "+c+" "+amount+"");
+                if (String.valueOf(amountToDepositTx.getText()).matches("[-+]?[0-9]*\\.?[0-9]+") ) {
 
-                ContactServer con = new ContactServer();
-                TransactionObject transferObject = new TransactionObject();
 
-                //ContactServer con = new ContactServer();
-                c = c + amount;
-                checking = Float.toString(c);
-                saving = Float.toString(s);
-                transferObject.setName(t.getName());
-                transferObject.setMessage("saving=" + (s) + ",current=" + (c));
-                transferObject.setId("DEPOSIT");
-                TransactionObject tin = con.sendTransaction(transferObject);
-                if (tin.getId() != null) {
+                    message.setText(null);
+                    message.setVisible(false);
 
-                    message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
-                    message.setVisible(true);
-                    savingBalanceTx.setText("$" + Float.toString(s));
-                    checkingBalanceTx.setText("$" + Float.toString(c));
+                    float s = Float.parseFloat(savingBalanceTx.getText().substring(1, savingBalanceTx.getText().length()));
+                    float c = Float.parseFloat(checkingBalanceTx.getText().substring(1, checkingBalanceTx.getText().length()));
+                    float amount = Float.parseFloat(amountToDepositTx.getText());
+                    //System.out.println("s c a "+ s +" "+c+" "+amount+"");
+
+                    ContactServer con = new ContactServer();
+                    TransactionObject transferObject = new TransactionObject();
+
+                    //ContactServer con = new ContactServer();
+                    c = c + amount;
+                    checking = Float.toString(c);
+                    saving = Float.toString(s);
+                    transferObject.setName(t.getName());
+                    transferObject.setMessage("saving=" + (s) + ",current=" + (c));
+                    transferObject.setId("DEPOSIT");
+                    TransactionObject tin = con.sendTransaction(transferObject);
+                    if (tin.getId() != null) {
+
+                        message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
+                        message.setVisible(true);
+                        savingBalanceTx.setText("$" + Float.toString(s));
+                        checkingBalanceTx.setText("$" + Float.toString(c));
+                    } else {
+                        message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
+                        message.setVisible(true);
+                    }
+
                 } else {
-                    message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
+                    message.setText("<html><font color='red'>" + "Invalid amount entered!" + "</font></html>");
                     message.setVisible(true);
                 }
 
@@ -332,11 +364,10 @@ public class AdminPage extends JPanel {
         });
 
 
-
         withdrawPanleButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                savingBalanceTx.setText("$"+saving);
-                checkingBalanceTx.setText("$"+checking);
+                savingBalanceTx.setText("$" + saving);
+                checkingBalanceTx.setText("$" + checking);
 
                 transferFromComboBox.setVisible(false);
                 transferFromLabel.setVisible(false);
@@ -366,61 +397,71 @@ public class AdminPage extends JPanel {
                 checkingBalanceLabel.setVisible(true);
                 savingBalanceTx.setEditable(false);
                 checkingBalanceTx.setEditable(false);
+
+                userListComboBox.setVisible(false);
+                deleteUserButton.setVisible(false);
+                selectUser.setVisible(false);
+                message.setVisible(false);
+                amountToWithdrawTx.setText("0");
             }
 
         });
         withdrawAmountButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                message.setText(null);
-                message.setVisible(false);
 
-                float s = Float.parseFloat(savingBalanceTx.getText().substring(1, savingBalanceTx.getText().length()));
-                float c = Float.parseFloat(checkingBalanceTx.getText().substring(1, checkingBalanceTx.getText().length()));
-                float amount = Float.parseFloat(amountToWithdrawTx.getText());
-                //System.out.println("s c a "+ s +" "+c+" "+amount+"");
+                if (String.valueOf(amountToWithdrawTx.getText()).matches("[-+]?[0-9]*\\.?[0-9]+") ) {
 
-                ContactServer con = new ContactServer();
-                TransactionObject transferObject = new TransactionObject();
 
-                if(c >= amount){
-                    c = c - amount;
-                    //ContactServer con = new ContactServer();
-                    checking = Float.toString(c);
-                    saving = Float.toString(s);
+                    message.setText(null);
+                    message.setVisible(false);
 
-                    transferObject.setName(t.getName());
-                    transferObject.setMessage("saving=" + (s) + ",current=" + (c));
-                    transferObject.setId("WITHDRAW");
-                    TransactionObject tin = con.sendTransaction(transferObject);
-                    if (tin.getId() != null) {
+                    float s = Float.parseFloat(savingBalanceTx.getText().substring(1, savingBalanceTx.getText().length()));
+                    float c = Float.parseFloat(checkingBalanceTx.getText().substring(1, checkingBalanceTx.getText().length()));
+                    float amount = Float.parseFloat(amountToWithdrawTx.getText());
+                    //System.out.println("s c a "+ s +" "+c+" "+amount+"");
 
-                        message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
-                        message.setVisible(true);
-                        savingBalanceTx.setText("$" + Float.toString(s));
-                        checkingBalanceTx.setText("$" + Float.toString(c));
+                    ContactServer con = new ContactServer();
+                    TransactionObject transferObject = new TransactionObject();
+
+                    if (c >= amount) {
+                        c = c - amount;
+                        //ContactServer con = new ContactServer();
+                        checking = Float.toString(c);
+                        saving = Float.toString(s);
+
+                        transferObject.setName(t.getName());
+                        transferObject.setMessage("saving=" + (s) + ",current=" + (c));
+                        transferObject.setId("WITHDRAW");
+                        TransactionObject tin = con.sendTransaction(transferObject);
+                        if (tin.getId() != null) {
+
+                            message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
+                            message.setVisible(true);
+                            savingBalanceTx.setText("$" + Float.toString(s));
+                            checkingBalanceTx.setText("$" + Float.toString(c));
+                        } else {
+                            message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
+                            message.setVisible(true);
+                        }
                     } else {
                         message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
                         message.setVisible(true);
                     }
-                }
-                else
-                {
-                    message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
+                } else {
+                    message.setText("<html><font color='red'>" + "Invalid Amount Entered!" + "</font></html>");
                     message.setVisible(true);
                 }
-
 
             }
         });
 
 
-
         transferPanleButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                savingBalanceTx.setText("$"+saving);
-                checkingBalanceTx.setText("$"+checking);
+                savingBalanceTx.setText("$" + saving);
+                checkingBalanceTx.setText("$" + checking);
 
                 transferFromComboBox.setVisible(true);
                 transferFromLabel.setVisible(true);
@@ -450,68 +491,81 @@ public class AdminPage extends JPanel {
                 checkingBalanceLabel.setVisible(true);
                 savingBalanceTx.setEditable(false);
                 checkingBalanceTx.setEditable(false);
+
+                userListComboBox.setVisible(false);
+                deleteUserButton.setVisible(false);
+                selectUser.setVisible(false);
+                message.setVisible(false);
+                amountToTransferTx.setText("0");
             }
         });
         transferAmountButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                message.setText(null);
-                message.setVisible(false);
 
-                float s = Float.parseFloat(savingBalanceTx.getText().substring(1, savingBalanceTx.getText().length()));
-                float c = Float.parseFloat(checkingBalanceTx.getText().substring(1, checkingBalanceTx.getText().length()));
-                float amount = Float.parseFloat(amountToTransferTx.getText());
-                //System.out.println("s c a "+ s +" "+c+" "+amount+"");
+                if (String.valueOf(amountToTransferTx.getText()).matches("[-+]?[0-9]*\\.?[0-9]+")) {
 
-                ContactServer con = new ContactServer();
-                TransactionObject transferObject = new TransactionObject();
-                if (transferFromComboBox.getSelectedItem().equals("Checking") && amount <= c) {
-                    s = s + amount;
-                    c = c - amount;
-                    //ContactServer con = new ContactServer();
-                    checking = Float.toString(c);
-                    saving = Float.toString(s);
 
-                    transferObject.setName(t.getName());
-                    transferObject.setMessage("saving=" + (s) + ",current=" + (c));
-                    transferObject.setId("TRANSFER");
-                    TransactionObject tin = con.sendTransaction(transferObject);
-                    if (tin.getId() != null) {
+                    message.setText(null);
+                    message.setVisible(false);
 
-                        message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
-                        message.setVisible(true);
-                        savingBalanceTx.setText("$" + Float.toString(s));
-                        checkingBalanceTx.setText("$" + Float.toString(c));
-                    } else {
-                        message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
-                        message.setVisible(true);
-                    }
-                } else if (transferFromComboBox.getSelectedItem().equals("Saving") && amount <= s) {
-                    s = s - amount;
-                    c = c + amount;
+                    float s = Float.parseFloat(savingBalanceTx.getText().substring(1, savingBalanceTx.getText().length()));
+                    float c = Float.parseFloat(checkingBalanceTx.getText().substring(1, checkingBalanceTx.getText().length()));
+                    float amount = Float.parseFloat(amountToTransferTx.getText());
+                    //System.out.println("s c a "+ s +" "+c+" "+amount+"");
 
-                    checking = Float.toString(c);
-                    saving = Float.toString(s);
+                    ContactServer con = new ContactServer();
+                    TransactionObject transferObject = new TransactionObject();
+                    if (transferFromComboBox.getSelectedItem().equals("Checking") && amount <= c) {
+                        s = s + amount;
+                        c = c - amount;
+                        //ContactServer con = new ContactServer();
+                        checking = Float.toString(c);
+                        saving = Float.toString(s);
 
-                    //ContactServer con = new ContactServer();
-                    transferObject.setName(t.getName());
-                    transferObject.setMessage("saving=" + s + " ,current=" + c);
-                    transferObject.setId("TRANSFER");
-                    TransactionObject tin = con.sendTransaction(transferObject);
-                    if (tin.getId() != null) {
-                        message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
-                        message.setVisible(true);
-                        savingBalanceTx.setText("$" + Float.toString(s));
-                        checkingBalanceTx.setText("$" + Float.toString(c));
+                        transferObject.setName(t.getName());
+                        transferObject.setMessage("saving=" + (s) + ",current=" + (c));
+                        transferObject.setId("TRANSFER");
+                        TransactionObject tin = con.sendTransaction(transferObject);
+                        if (tin.getId() != null) {
+
+                            message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
+                            message.setVisible(true);
+                            savingBalanceTx.setText("$" + Float.toString(s));
+                            checkingBalanceTx.setText("$" + Float.toString(c));
+                        } else {
+                            message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
+                            message.setVisible(true);
+                        }
+                    } else if (transferFromComboBox.getSelectedItem().equals("Saving") && amount <= s) {
+                        s = s - amount;
+                        c = c + amount;
+
+                        checking = Float.toString(c);
+                        saving = Float.toString(s);
+
+                        //ContactServer con = new ContactServer();
+                        transferObject.setName(t.getName());
+                        transferObject.setMessage("saving=" + s + " ,current=" + c);
+                        transferObject.setId("TRANSFER");
+                        TransactionObject tin = con.sendTransaction(transferObject);
+                        if (tin.getId() != null) {
+                            message.setText("<html><font color='green'>" + "Balance Updated!" + "</font></html>");
+                            message.setVisible(true);
+                            savingBalanceTx.setText("$" + Float.toString(s));
+                            checkingBalanceTx.setText("$" + Float.toString(c));
+                        } else {
+                            message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
+                            message.setVisible(true);
+                        }
                     } else {
                         message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
                         message.setVisible(true);
                     }
                 } else {
-                    message.setText("<html><font color='red'>" + "Transaction Not Possbile!" + "</font></html>");
+                    message.setText("<html><font color='red'>" + "Invalid Amount Entered!" + "</font></html>");
                     message.setVisible(true);
                 }
-
             }
         });
 
@@ -534,8 +588,11 @@ public class AdminPage extends JPanel {
                 withdrawAmountButton.setVisible(false);
                 amountToWithdrawTx.setVisible(false);
                 WithdrawAmountLabel.setVisible(false);
+
                 checkingBalanceTx.setText("0");
                 savingBalanceTx.setText("0");
+                passwordTx.setText("");
+                userNameTx.setText("");
 
                 passwordTx.setVisible(true);
                 userNameTx.setVisible(true);
@@ -549,28 +606,41 @@ public class AdminPage extends JPanel {
                 checkingBalanceTx.setEditable(true);
                 addNewUserButton.setVisible(true);
 
+                userListComboBox.setVisible(false);
+                deleteUserButton.setVisible(false);
+                selectUser.setVisible(false);
+                message.setVisible(false);
+
+
             }
         });
 
         addNewUserButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //System.out.println(String.valueOf(savingBalanceTx.getText()));
+                if (String.valueOf(savingBalanceTx.getText()).matches("[-+]?[0-9]*\\.?[0-9]+") && String.valueOf(checkingBalanceTx.getText()).matches("[-+]?[0-9]*\\.?[0-9]+")) {
 
 
+                    ContactServer con = new ContactServer();
+                    TransactionObject transferObject = new TransactionObject();
+                    transferObject.setName(userNameTx.getText());
+                    transferObject.setNum(passwordTx.getText());
+                    transferObject.setMessage("saving=" + savingBalanceTx.getText() + " ,current=" + checkingBalanceTx.getText());
+                    transferObject.setId("CREATE");
+                    transferObject.setType(userTypeComboBox.getSelectedItem().toString());
+                    TransactionObject tin = con.sendTransaction(transferObject);
+                    if (tin.getId() != null && tin.getId().equals("1")) {
+                        message.setText("<html><font color='red'>" + tin.getName() + "</font><font color='green'>" + " Added!" + "</font></html>");
+                        message.setVisible(true);
+                    } else {
+                        System.out.println(tin.getMessage());
+                        message.setText("<html><font color='red'>" + "Not valid input..try again!" + "</font></html>");
+                        message.setVisible(true);
+                    }
 
-                ContactServer con = new ContactServer();
-                TransactionObject transferObject = new TransactionObject();
-                transferObject.setName(userNameTx.getText());
-                transferObject.setNum(passwordTx.getText());
-                transferObject.setMessage("saving=" + savingBalanceTx.getText() + " ,current=" + checkingBalanceTx.getText());
-                transferObject.setId("CREATE");
-                transferObject.setType(userTypeComboBox.getSelectedItem().toString());
-                TransactionObject tin = con.sendTransaction(transferObject);
-                if (tin.getId() != null && tin.getId().equals("1")) {
-                    message.setText("<html><font color='green'>" + "User Added!" + "</font></html>");
-                    message.setVisible(true);
                 } else {
-                    message.setText("<html><font color='red'>" + "Please enter all the fields!" + "</font></html>");
+                    message.setText("<html><font color='red'>" + "Not valid input..try again!" + "</font></html>");
                     message.setVisible(true);
                 }
 
@@ -605,11 +675,42 @@ public class AdminPage extends JPanel {
                 UserTypeLabel.setVisible(false);
                 savingBalanceLabel.setVisible(true);
                 checkingBalanceLabel.setVisible(true);
-                savingBalanceTx.setText("$"+saving);
-                checkingBalanceTx.setText("$"+checking);
+                savingBalanceTx.setText("$" + saving);
+                checkingBalanceTx.setText("$" + checking);
                 savingBalanceTx.setEditable(false);
                 checkingBalanceTx.setEditable(false);
                 addNewUserButton.setVisible(false);
+
+                userListComboBox.setVisible(true);
+                userListComboBox.setEditable(false);
+                try {
+                    if (userListComboBox.getItemAt(0) == null) {
+                        userListComboBox.removeAllItems();
+                        for (String accountUser : findUsers()) {
+                            userListComboBox.addItem(accountUser);
+
+                        }
+                    } else {
+                        userListComboBox.removeAllItems();
+                        for (String accountUser : findUsers()) {
+                            userListComboBox.addItem(accountUser);
+
+                        }
+
+                    }
+
+                    //userListComboBox.removeAllItems();
+//                    for (String accountUser : findUsers()) {
+//                        userListComboBox.addItem(accountUser);
+//
+//                    }
+                } catch (Exception e1) {
+                    System.out.println(e1);
+                }
+
+                deleteUserButton.setVisible(true);
+                selectUser.setVisible(true);
+
             }
         });
 
@@ -617,10 +718,104 @@ public class AdminPage extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                String selectedUserName = userListComboBox.getSelectedItem().toString();
+                System.out.print("selected User:" + selectedUserName);
+                if (!(t.getName().equals(selectedUserName))) {
+                    ContactServer con = new ContactServer();
+                    TransactionObject transferObject = new TransactionObject();
+                    transferObject.setName(selectedUserName);
+                    transferObject.setId("DELETE");
+
+                    TransactionObject tin = con.sendTransaction(transferObject);
+
+                    if (tin.getId() != null && tin.getId().equals("1")) {
+                        message.setText("<html><font color='red'>" + selectedUserName + "</font><font color='green'>" + " deleted!" + "</font></html>");
+                        message.setVisible(true);
+                        try {
+                            userListComboBox.removeAllItems();
+                            for (String accountUser : findUsers()) {
+                                userListComboBox.addItem(accountUser);
+
+                            }
+                        } catch (Exception e1) {
+                            System.out.println(e1);
+                        }
+
+
+                    } else {
+                        message.setText("<html><font color='red'>" + "Action Failed!" + "</font></html>");
+                        message.setVisible(true);
+                    }
+                } else {
+                    message.setText("<html><font color='red'>" + "Select Different User!" + "</font></html>");
+                    message.setVisible(true);
+                }
+
+
+            }
+        });
+
+        userListComboBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedUserName = "";
+                try {
+                    selectedUserName = ((JComboBox) e.getSource()).getSelectedItem().toString();
+                } catch (Exception e1) {
+                    System.out.println(e1);
+                }
+//                finally {
+                //((JComboBox) e.getSource()).setSelectedItem(selectedUserName);
+//                }
+
+
+                ContactServer con = new ContactServer();
+                TransactionObject transferObject = new TransactionObject();
+                transferObject.setName(selectedUserName);
+                transferObject.setId("BALANCE");
+
+                TransactionObject tin = con.sendTransaction(transferObject);
+
+                if (tin.getId() != null && tin.getId().equals("Login Successful!!!")) {
+
+                    Float savings = new Float(tin.getMessage().substring("saving=".length() + 1, tin.getMessage().indexOf(",")));
+                    Float currents = new Float(tin.getMessage().substring(tin.getMessage().indexOf(",") + "current=".length() + 1, tin.getMessage().length()));
+
+                    savingBalanceTx.setText("$" + savings.toString());
+                    checkingBalanceTx.setText("$" + currents.toString());
+
+
+                    message.setText("<html><font color='red'>" + selectedUserName + "</font><font color='green'>" + " selected!" + "</font></html>");
+                    message.setVisible(true);
+
+                } else {
+                    //heading.setText(t.getName());
+                    message.setText("<html><font color='red'>" + "Action Failed!" + "</font></html>");
+                    message.setVisible(true);
+                }
+
+
             }
         });
 
 
+    }
+
+    public List<String> findUsers() {
+        ContactServer con = new ContactServer();
+        TransactionObject request = new TransactionObject();
+        request.setId("FETCH_USERS");
+
+        TransactionObject response = con.sendTransaction(request);
+        List<String> users = new ArrayList<String>();
+
+        if (response != null && response.getMessage() != null && response.getMessage().length() > 0) {
+            String temp = response.getMessage();
+            temp = temp.substring(1, temp.length()) + ",";
+            users = Arrays.asList(temp.split(","));
+        }
+
+        return users;
     }
 
 
